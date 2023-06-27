@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>    
+    <h1>Calculadora</h1>    
+    <div>        
+        <form name="Calculadora">
+            <input type="text" name="resultado" value="" autocomplete="off" readonly>                        
+            <div style="align-items: center; justify-content: center">
+                <input type="reset" value="C">        
+                <input type="button" value="%" onclick="document.Calculadora.resultado.value+='%'">
+                <input type="button" value="B" onclick="document.Calculadora.resultado.value+='B'">
+                <input type="button" value="/" onclick="document.Calculadora.resultado.value+='/'" class="naranja"> 
+                <br>
+                <input type="button" value="7" onclick="document.Calculadora.resultado.value+='7'" class="gris">
+                <input type="button" value="8" onclick="document.Calculadora.resultado.value+='8'" class="gris">
+                <input type="button" value="9" onclick="document.Calculadora.resultado.value+='9'" class="gris">
+                <input type="button" value="X" onclick="document.Calculadora.resultado.value+='*'" class="naranja">
+                <br>
+                <input type="button" value="4" onclick="document.Calculadora.resultado.value+='4'" class="gris">
+                <input type="button" value="5" onclick="document.Calculadora.resultado.value+='5'" class="gris">
+                <input type="button" value="6" onclick="document.Calculadora.resultado.value+='6'" class="gris">
+                <input type="button" value="-" onclick="document.Calculadora.resultado.value+='-'" class="naranja">
+                <br>
+                <input type="button" value="1" onclick="document.Calculadora.resultado.value+='1'" class="gris">
+                <input type="button" value="2" onclick="document.Calculadora.resultado.value+='2'" class="gris">
+                <input type="button" value="3" onclick="document.Calculadora.resultado.value+='3'" class="gris">
+                <input type="button" value="+" onclick="document.Calculadora.resultado.value+='+'" class="naranja">
+                <br>
+                <input type="button" value="00" onclick="document.Calculadora.resultado.value+='00'" class="gris">
+                <input type="button" value="0" onclick="document.Calculadora.resultado.value+='0'" class="gris">
+                <input type="button" value="." onclick="document.Calculadora.resultado.value+='.'">
+                <input type="button" value="=" onclick="document.Calculadora.resultado.value=eval(Calculadora.resultado.value)">
+            </div>                        
+        </form>            
+    </div>    
+    <style>@import url(/css/estilo.css);</style>
+</body>
+<footer>
+    <h4>Realizado por : Deyvid Julian Almanza Ramirez</h4>
+</footer>
+</html>
